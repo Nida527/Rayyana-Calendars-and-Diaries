@@ -1,0 +1,30 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+}
+
+.card.animate-card {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 2s forwards;
+}
+
+.btn-animate {
+    transition: background-color 0.3s ease;
+}
+
+.btn-animate:hover {
+    background-color: #0056b3;
+}

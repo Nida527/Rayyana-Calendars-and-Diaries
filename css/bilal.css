@@ -1,0 +1,260 @@
+*{
+  box-sizing: border-box;
+}
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #918a92; /* Ensure the background color is set */
+    width: 100%; /* Make it responsive */
+    height: 354px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgb(7, 7, 7);
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+.subscribe__title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 100px;
+    text-align: center; /* Center the title */
+}
+
+.subscribe__copy {
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 53px;
+    margin-left: 0; /* Remove the negative margin */
+}
+
+  .form {
+    margin-bottom: 25px;
+  }
+  
+  .form__email {
+    padding: 20px 25px;
+    border-radius: 5px;
+    border: 1px solid #cad3db;
+    width: 431px;
+    font-size: 18px;
+    color: #0f121f;
+  }
+  
+  .form__email:focus {
+    outline: 1px solid #3d9fff;
+  }
+  
+  .notice {
+    width: 345px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+  .btns {
+    border: none;
+    background-color: #9a0027;
+    padding: 20px;
+    width: 350px;
+    border-radius: 50px;
+    color: white;
+    margin-top: -30px;
+    margin-right: 100px;
+    font-size: 15px;
+  }
+  .btns:hover {
+    background-color: #050001;
+    transition: 1s ease;
+    transform: scale(0.9);
+  }
+  
+  .footer {
+    width: 100%; /* Ensure it takes full width of the container */
+    max-width: 1910px; /* Optionally set a max-width to avoid stretching too wide */
+    background: #10182f;
+    border-radius: 6px;
+    margin-top: 0; /* Remove the large margin */
+    position: relative; /* Position it relative within the content flow */
+    bottom: 0; /* Fix the footer to the bottom of the page */
+    padding: 40px 60px; /* Add padding for content inside the footer */
+    box-sizing: border-box; /* Make sure padding is included in width calculations */
+}
+
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 0; /* Remove redundant padding */
+    width: 100%; /* Ensure it takes full width of its parent container */
+}
+
+.footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-col .links {
+    margin-top: 20px;
+}
+
+.footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+    color: #fff;
+}
+
+.footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+}
+
+.footer-col form {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489c6;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+    color: #ccc;
+}
+
+.footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+    background: #cecccc;
+}
+
+.footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.footer-col .icons i {
+    color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+    color: #fff;
+}
+
+.hg img{
+  height: 90px;
+  width: 90px;
+}
+.product-subscribe-section{
+  background-color: #90D5FF;
+}
+
+.card img{
+  height: 150px;
+}
+
+
+/* Card Transition Effect */
+.transition-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on the card */
+.transition-card:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+
+  /* Button Hover Animation */
+  .btn-animate {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust button padding */
+    border-radius: 5px; /* Rounded corners */
+    background: linear-gradient(45deg, #ff6a6a, #ff4b4b); /* Lightish red gradient */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  /* Icon style */
+  .btn-animate i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+  }
+
+  /* Button Hover Animation */
+  .btn-animate::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    transition: all 0.4s ease;
+    border-radius: 50%;
+    z-index: 0;
+  }
+
+  .btn-animate:hover::before {
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-animate:hover {
+    color: #fff;
+    z-index: 1;
+  }
+
+.product-cards-section h3{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero_sec {
+  height: 400px;
+  background-image: url(images/bg3.jpg);
+  background-size: cover;  /* This will make the image cover the full section */
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;  /* This will center the image */
+}
